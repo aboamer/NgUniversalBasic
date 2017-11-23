@@ -1,0 +1,207 @@
+/* You can add global styles to this file, and also import other style files */
+
+.tooltip.signin .content.success,
+.tooltip.signin .content.del_pwd {
+  display: none;
+}
+
+.header_login .wrapper>.text_toggle.bom .text_email,
+.header_login .wrapper>.text_toggle.bom .text_email:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#text_toggle_sd .text_email,
+#text_toggle_sd .text_emoji {
+  display: block;
+  float: right;
+}
+
+#text_toggle_sd .text_email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+#text_toggle_sd .text_emoji {
+  margin-right: 5px;
+}
+
+#text_toggle_sd .icon.flag_cn {
+  display: block;
+  float: right;
+  margin-right: 6px;
+  margin: 4px 6px 0px 0px;
+}
+
+#text_toggle_sd .icon.caret_user {
+  display: block;
+  float: right;
+  margin-top: 7px;
+  margin-left: 3px;
+}
+
+#text_toggle_sd {
+  padding: 9px 0px 6px;
+  float: right;
+}
+
+#tooltip_sd {
+  margin-top: 40px;
+  right: 0px;
+}
+
+.tooltip.signin .content .text.join {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container.desktop .header_login {
+  margin-top: -35px;
+}
+
+#mcp_btn_removepwd,
+#mcp_btn_removepwd:focus {
+  margin-top: 6px;
+  background: #ffa200;
+  color: #fff;
+}
+
+#mcp_btn_removepwd:hover {
+  background: #ffb311;
+}
+
+#mcp_btn_removepwd:active,
+#mcp_btn_removepwd:active:focus {
+  background: #ee9100;
+}
+
+#mcp_btn_removepwd,
+#modalChangePwd .text.or {
+  margin-bottom: 17px;
+}
+
+#mcp_btn_removepwd,
+#modalChangePwd .wrapper.pwd.new,
+#modalChangePwd .text.or {
+  display: none;
+}
+
+#modalChangePwd .text.currentpwd,
+#modalChangePwd .text.or {
+  font-size: 14px;
+}
+
+#modalChangePwd .text.currentpwd {
+  margin-bottom: 75px;
+}
+
+#modalChangePwd .text.msg {
+  font-size: 14px;
+  margin: 0px auto;
+}
+
+@media (min-width: 768px) {
+  #text_toggle_sm,
+  #text_toggle_bm {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  #text_toggle_sd .text_emoji {
+    display: none;
+  }
+  #text_toggle_sd .text_email {
+    display: block;
+    max-width: 190px;
+  }
+  #tooltip_sd {
+    display: block;
+  }
+  #tooltip_sm {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  #text_toggle_sd .text_emoji {
+    display: none;
+  }
+  #text_toggle_sd .text_email {
+    display: block;
+    max-width: 146px;
+  }
+  #tooltip_sd {
+    display: block;
+  }
+  #tooltip_sm {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  #tooltip_sd {
+    display: none;
+  }
+  #tooltip_sm {
+    display: block;
+  }
+  .container.desktop .header_login {
+    margin-top: -28px;
+  }
+  #text_toggle_sd,
+  #text_toggle_bd {
+    display: none;
+  }
+  #text_toggle_sm,
+  #text_toggle_bm {
+    display: block;
+  }
+  .header_login .text_toggle.bom.bm {
+    margin: 2px 31px 0px 0px;
+  }
+  .header_login .text_toggle.signin.sm.icon_user_white {
+    margin-right: 21px;
+  }
+  .header_login .text_toggle.signin.sm.icon_close_white {
+    margin-right: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  #tooltip_sd {
+    display: none;
+  }
+  #tooltip_sm {
+    display: block;
+  }
+  .container.desktop .header_login {
+    margin-top: -28px;
+  }
+  .header_login .text_toggle.bom.bm {
+    margin: 2px 15px 0px 0px;
+  }
+  .header_login .text_toggle.signin.sm.icon_user_white {
+    margin-right: 15px;
+  }
+  .header_login .text_toggle.signin.sm.icon_close_white {
+    margin-right: 16px;
+  }
+  #modalChangePwd {
+    height: 100%;
+    width: auto;
+    margin: 0px auto;
+    min-width: 320px;
+  }
+}
+
+@media all and (max-width: 767px) and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  /* IE10 */
+  .container.desktop .header_login {
+    margin-top: -28px !important;
+  }
+}
