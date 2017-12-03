@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <!--Sidebar component -->
+  <!--   you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple" -->
+  <app-sidebar></app-sidebar>
+
+  <div class="main-panel">
+    <!--Header navigation bar component -->
+    <app-header></app-header>
+    <div class="content">
+      <div class="container-fluid">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </div>
+</div>

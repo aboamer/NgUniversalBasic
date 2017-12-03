@@ -1,0 +1,12 @@
+
+  <div class="wrapper-login">
+    <div class="form-signin">
+      <h2 class="form-signin-heading">Alert Auto Job Login !</h2>
+
+      <p class="text-danger" *ngIf="errorMessage"> {{errorMessage}} </p>
+      <input type="text" class="form-control" name="username" placeholder="User Name" required="true" autofocus="" #userName />
+      <input type="password" class="form-control" name="password" placeholder="Password" required="true" #password/>
+
+      <button class="btn  btn-primary btn-block" type="submit" (click)="onLogin(userName.value,password.value)" >Login</button>
+    </div>
+  </div>

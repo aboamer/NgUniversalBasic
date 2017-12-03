@@ -56,6 +56,11 @@ app.get('*', (req, res) => {
   
 });
 
+//The 404 Route (ALWAYS Keep this as the last route)
+app.get('*', function(req, res){
+  res.send('Page Not Found', 404);
+});
+
 // Start up the Node server
 app.listen(PORT, () => {
   console.log(`Node Express server listening on http://localhost:${PORT}`);

@@ -1,0 +1,202 @@
+<div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="header">
+                    <h4 class="title">New Alert</h4>
+                </div>
+                <div class="content">
+                    <form>
+                        <div class="row">
+                           
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Alert Name</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label>Alert Type</label>
+                                    <select class="form-control" id="alertSelect">
+                                      <option>Datasheet</option>
+                                      <option>Rohs</option>
+                                      <option>PCN</option>
+                                      <option>LC</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Company Name</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label>Running Method</label>
+                                    <select class="form-control" id="runningSelect">
+                                      <option>Automatic</option>
+                                      <option>Manual</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                         <div class="row">
+                         
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                 <label>Run Date</label>
+                                 <div class='input-group date' id='datetimepicker1'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                                
+                                
+                            </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Schedule</label>
+                                   <select class="form-control" id="schduleSelect">
+                                      <option>Daily</option>
+                                      <option>Weekly</option>
+                                      <option>Monthly</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Run On Time</label>
+                                    <input id="checkbox1" type="checkbox" class="btn btn-primary form-control" >
+                                </div>
+            
+                            </div>
+                            
+                        
+                        </div>
+                        
+                        
+                        
+                        <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>File Name</label>
+                                        <input type="text" class="form-control" >
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>File Type</label>
+                                        <select class="form-control" id="fileType">
+                                          <option>XLS</option>
+                                          <option>CSV</option>
+                                          <option>Txt</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Alert FTP</label>
+                                        <select class="form-control" id="ftpAccount">
+                                          <option>Silicon Account</option>
+                                          <option>Arrow Account</option>
+                                          <option>BeaPCN Account</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Wrapped Columns</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Hyper Link Columns</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                             <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>EQ 60 Days Columns</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>LEVIN Columns</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>LEVIN Params</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Date Format COlumns</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Date Format Columns</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Wide Columns</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                             <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Query</label>
+                                    <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-info btn-fill pull-right">Create Alert</button>
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+       
+
+    </div>
