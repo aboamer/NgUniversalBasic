@@ -14,10 +14,10 @@ import { Constants } from '../../shared/constants';
 })
 export class FtpComponent implements OnInit {
 
-  private ftp = new Ftp;
-  private ftpList: Ftp[];
-  private saveOrUpdate: string;
-  private save: boolean;
+  ftp = new Ftp;
+  ftpList: Ftp[];
+  saveOrUpdate: string;
+  save: boolean;
 
   constructor(
     private titleService: Title,

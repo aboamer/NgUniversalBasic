@@ -11,8 +11,8 @@ import { CallRestService } from './../../services/call-rest.service';
 })
 export class LoginComponent implements OnInit {
 
-  private user: User;
-  private errorMessage: string;
+   user: User;
+   errorMessage: string;
 
   constructor(
     private userService: CallRestService,
