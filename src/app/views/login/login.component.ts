@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
 
           if (this.user) {
             //navigate to home page
-            this.router.navigate(['home'], { replaceUrl: true });
+            this.router.navigate(['home/create-alert'], { replaceUrl: true });
           } else {
             this.writeErrorMessage('Invalid login credintial !');
           }
