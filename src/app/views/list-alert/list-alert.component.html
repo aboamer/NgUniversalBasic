@@ -1,122 +1,56 @@
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="header">
-          <h4 class="title">Alert Table</h4>
-          <p class="category">Here is all configured alerts</p>
-        </div>
-        <div class="content table-responsive table-full-width">
-          <table class="table table-hover table-striped">
-            <thead>
-              <th>ID</th>
-              <th>Name</th>
-              <th>Type</th>
-              <th>File Name</th>
-              <th>File Type</th>
-              <th>User Name</th>
-              <th>Run Date</th>
-              <th>Run on Time</th>
-              <th>Schedule</th>
-              <th>Running Method</th>
-              <th>Ftp</th>
-              <th>Email</th>
-              <th>Actions</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Datasheet Exsiting</td>
-                <td>Datasheet</td>
-                <td>Existing Parts Datasheet</td>
-                <td>xlsx</td>
-                <td>NI</td>
-                <td>15-DEC-17</td>
-                <td>Yes</td>
-                <td>Weekly</td>
-                <td>Automatic</td>
-                <td>Silicon Ftp Account</td>
-                <td>mohammad_amer@siliconexpert.com</td>
-                <td class="td-actions">
-                  <button type="button" rel="tooltip" title="Edit" class="btn btn-info  btn-xs">
-                    <i class="fa fa-edit"></i>
-                  </button>
-                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-xs">
-                    <i class="fa fa-times"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>LC New</td>
-                <td>LC</td>
-                <td>New Parts LC</td>
-                <td>xlsx</td>
-                <td>NI</td>
-                <td>15-DEC-17</td>
-                <td>Yes</td>
-                <td>Weekly</td>
-                <td>Automatic</td>
-                <td>Silicon Ftp Account</td>
-                <td></td>
-                <td class="td-actions">
-                  <button type="button" rel="tooltip" title="Edit" class="btn btn-info  btn-xs">
-                    <i class="fa fa-edit"></i>
-                  </button>
-                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-xs">
-                    <i class="fa fa-times"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>PCN New</td>
-                <td>PCN</td>
-                <td>New Parts PCN</td>
-                <td>xlsx</td>
-                <td>NI</td>
-                <td>15-DEC-17</td>
-                <td>Yes</td>
-                <td>Daily</td>
-                <td>Automatic</td>
-                <td></td>
-                <td></td>
-                <td class="td-actions">
-                  <button type="button" rel="tooltip" title="Edit" class="btn btn-info  btn-xs">
-                    <i class="fa fa-edit"></i>
-                  </button>
-                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-xs">
-                    <i class="fa fa-times"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Rohs New</td>
-                <td>Rohs</td>
-                <td>New Parts Rohs</td>
-                <td>xlsx</td>
-                <td>NI</td>
-                <td>20-DEC-17</td>
-                <td>Yes</td>
-                <td>Monthly</td>
-                <td>Automatic</td>
-                <td></td>
-                <td>ahmed_salem@siliconexpert.com</td>
-                <td class="td-actions">
-                  <button type="button" rel="tooltip" title="Edit" class="btn btn-info  btn-xs">
-                    <i class="fa fa-edit"></i>
-                  </button>
-                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-xs">
-                    <i class="fa fa-times"></i>
-                  </button>
-                </td>
-              </tr>
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="header">
+        <h4 class="title">Alert Table</h4>
+        <p class="category">Here is all configured alerts</p>
+      </div>
+      <div class="content table-responsive table-full-width">
+        <table class="table table-hover table-striped">
+          <thead>
+            <th>Id</th>
+            <th>Alert Name</th>
+            <th>Alert Type</th>
+            <th>File Name</th>
+            <th>File Type</th>
+            <th>User Name</th>
+            <th>Run Date</th>
+            <th>Running Method</th>
+            <th>Schedule</th>
+            <th>Actions</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let alert of alertList">
+              <td>{{alert.alertId}}</td>
+              <td>{{alert.alertName}}</td>
+              <td>{{alert.alertType}}</td>
+              <td>{{alert.fileName}}</td>
+              <td>{{alert.fileType}}</td>
+              <td>{{alert.userName}}</td>
+              <td>{{alert.runDate}}</td>
+              <td>{{alert.runningMethod}}</td>
+              <td>{{alert.schedule}}</td>
+              <td class="td-actions">
+                <button type="button" rel="tooltip" title="Edit" class="btn btn-info  btn-xs" (click)="onEditAlert(alert,false)">
+                  <i class="fa fa-edit"></i>
+                </button>
+                <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-xs" (click)="onDeleteAlert(alert)">
+                  <i class="fa fa-times"></i>
+                </button>
 
-            </tbody>
-          </table>
+                <button type="button" rel="tooltip" title="Run" class="btn btn-info btn-xs" (click)="onRunAlert(alert)" *ngIf="(alert.runningMethod==='Manual')">
+                  <i class="pe-7s-play"></i>
+                </button>
 
-        </div>
+
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
       </div>
     </div>
-
   </div>
+
+</div>

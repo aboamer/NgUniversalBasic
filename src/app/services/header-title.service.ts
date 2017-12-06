@@ -8,7 +8,6 @@ export class HeaderTitleService {
 
  
     sendMessage(message: string) {
-        console.log('Sent ==> '+message);
         this.messageSource.next(message );
     }
  

@@ -18,6 +18,7 @@ import { HttpModule, Http } from '@angular/http';
 import { HeaderTitleService } from './services/header-title.service';
 import { FormsModule } from '@angular/forms';
 import { NotificationService } from './services/notification.service';
+import { SearchComponent } from './views/search/search.component';
 
 
 
@@ -34,6 +35,8 @@ import { NotificationService } from './services/notification.service';
     CreateAlertComponent, 
     ListAlertComponent, 
     SettingsComponent,
+    SearchComponent
+    
   ],
   imports: [
     HttpModule,
