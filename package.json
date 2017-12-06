@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist/*",
     "build:universal": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:universal": "node dist/server.js",
     "build:client-and-server-bundles": "ng build --prod && ng build --prod --app 1 --output-hashing=false",

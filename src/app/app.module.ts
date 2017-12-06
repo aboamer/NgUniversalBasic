@@ -19,8 +19,8 @@ import { HeaderTitleService } from './services/header-title.service';
 import { FormsModule } from '@angular/forms';
 import { NotificationService } from './services/notification.service';
 import { SearchComponent } from './views/search/search.component';
-
-
+import { DataService } from './services/DataService.service';
+import { NotFoundPageComponent } from './views/not-found-page/not-found-page.component';
 
 
 @NgModule({
@@ -28,15 +28,17 @@ import { SearchComponent } from './views/search/search.component';
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent, 
-    SidebarComponent, 
-    LoginComponent, 
-    FtpComponent, 
-    CreateAlertComponent, 
-    ListAlertComponent, 
+    FooterComponent,
+    SidebarComponent,
+    LoginComponent,
+    FtpComponent,
+    CreateAlertComponent,
+    ListAlertComponent,
     SettingsComponent,
-    SearchComponent
-    
+    SearchComponent,
+    NotFoundPageComponent,
+    NotFoundPageComponent
+
   ],
   imports: [
     HttpModule,
@@ -49,7 +51,7 @@ import { SearchComponent } from './views/search/search.component';
     BrowserModule.withServerTransition({ appId: 'my-app-id' }),
 
   ],
-  providers: [CallRestService, HeaderTitleService, NotificationService],
+  providers: [CallRestService, HeaderTitleService, NotificationService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
