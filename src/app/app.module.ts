@@ -10,16 +10,10 @@ import { FooterComponent } from './views/core/footer/footer.component';
 import { SidebarComponent } from './views/core/sidebar/sidebar.component';
 import { LoginComponent } from './views/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FtpComponent } from './views/ftp/ftp.component';
-import { CreateAlertComponent } from './views/create-alert/create-alert.component';
-import { ListAlertComponent } from './views/list-alert/list-alert.component';
-import { SettingsComponent } from './views/settings/settings.component';
 import { HttpModule, Http } from '@angular/http';
 import { HeaderTitleService } from './services/header-title.service';
 import { FormsModule } from '@angular/forms';
 import { NotificationService } from './services/notification.service';
-import { SearchComponent } from './views/search/search.component';
-import { DataService } from './services/DataService.service';
 import { NotFoundPageComponent } from './views/not-found-page/not-found-page.component';
 
 
@@ -31,11 +25,6 @@ import { NotFoundPageComponent } from './views/not-found-page/not-found-page.com
     FooterComponent,
     SidebarComponent,
     LoginComponent,
-    FtpComponent,
-    CreateAlertComponent,
-    ListAlertComponent,
-    SettingsComponent,
-    SearchComponent,
     NotFoundPageComponent,
     NotFoundPageComponent
 
@@ -51,7 +40,7 @@ import { NotFoundPageComponent } from './views/not-found-page/not-found-page.com
     BrowserModule.withServerTransition({ appId: 'my-app-id' }),
 
   ],
-  providers: [CallRestService, HeaderTitleService, NotificationService, DataService],
+  providers: [CallRestService, HeaderTitleService, NotificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
